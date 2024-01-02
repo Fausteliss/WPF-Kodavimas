@@ -1,0 +1,23 @@
+﻿<Window x:Class="wpff.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Šifravimas/Iššifravimas failo" Height="350" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="Pasirinkti failą:"/>
+        <TextBox x:Name="SelectedFileTextBox" Grid.Row="0" Margin="80,0,0,0"/>
+        <Button x:Name="SelectFileButton" Grid.Row="0" Margin="300,0,0,0" Content="Naršyti" Click="SelectFileButton_Click"/>
+
+        <Label Grid.Row="1" Content="Slaptažodis:"/>
+        <PasswordBox x:Name="PasswordTextBox" Grid.Row="1" Margin="80,0,0,0"/>
+
+        <Button x:Name="EncryptButton" Grid.Row="3" Margin="0,33,0,-45" Content="Šifravimas" Click="EncryptButton_Click"/>
+        <Button x:Name="DecryptButton" Grid.Row="3" Margin="50,2,50,2" Content="Iššifravimas" Click="DecryptButton_Click"/>
+    </Grid>
+</Window>
